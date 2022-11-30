@@ -3,6 +3,10 @@
 
 name: .NET
 
+env:
+  ACTION_SECRET__ENV_VAL1: ${{ secrets.ACTION_SECRET }}
+  ACTION_SECRET.ENV_VAL2: ${{ secrets.ACTION_SECRET }}
+  
 on:
   push:
     branches: [ "main" ]
